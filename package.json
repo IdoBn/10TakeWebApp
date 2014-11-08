@@ -1,0 +1,35 @@
+{
+  "name": "10TakeWebApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdoBn/10TakeWebApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IdoBn/10TakeWebApp/issues"
+  },
+  "homepage": "https://github.com/IdoBn/10TakeWebApp",
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp": "^3.8.10",
+    "gulp-angular-filesort": "^1.0.4",
+    "gulp-concat": "^2.4.1",
+    "gulp-inject": "^1.0.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.1.0",
+    "gulp-util": "^2.2.14",
+    "gulp-webserver": "^0.8.7",
+    "karma": "^0.12.23",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "shelljs": "^0.3.0"
+  }
+}
