@@ -1,7 +1,7 @@
 (function() {
 
 	function AuthCtrl() {
-
+		this.name = 'auth';
 	}
 
 		AuthCtrl.$inject = [];

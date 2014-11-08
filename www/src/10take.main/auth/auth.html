@@ -1,1 +1,6 @@
-<div ui-sref="home({hoohoo: 5, name: 'fjoiwe'})">Hello world</div>
+<!-- <div ui-sref="home({hoohoo: 5, name: 'fjoiwe'})">Hello world</div> -->
+<div>
+	<a ui-sref="auth.signIn">sing in</a><br>
+	<a ui-sref="auth.signUp">sign up</a>
+	<div ui-view='sign'></div>
+</div>
