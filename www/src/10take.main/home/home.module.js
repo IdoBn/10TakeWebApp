@@ -7,8 +7,7 @@
 	function Config(stateProvider, urlRouterProvider) {
 		stateProvider
 			.state('home', {
-					url: '/home/',
-					params: {name: {}, hoohoo: {}},
+					url: '/home',
 					views: {
 						'main': {
 							templateUrl: 'src/10take.main/home/home.html',

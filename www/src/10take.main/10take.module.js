@@ -6,6 +6,7 @@
 		Run.$inject = [];
 
 	function Config(stateProvider, urlRouterProvider) {
+
 		// home page
 		urlRouterProvider.otherwise('auth');
 	}
