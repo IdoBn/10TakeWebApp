@@ -13,6 +13,7 @@
 		Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 	angular.module('10take', [
+		'ngAnimate',
 		'ng-token-auth',
 		'ui.router',
 		'10take.home',

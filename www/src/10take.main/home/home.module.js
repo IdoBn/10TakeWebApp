@@ -13,7 +13,12 @@
 							templateUrl: 'src/10take.main/home/home.html',
 							controller: 'HomeCtrl as home'
 						}
-					}
+					},
+					resolve: {
+	          auth: function($auth) {
+	            return $auth.validateUser();
+	          }
+        	}
 				});
 
 		// home page
