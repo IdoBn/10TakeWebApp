@@ -7,9 +7,12 @@
 
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="../bower_components/ng-token-auth/dist/ng-token-auth.js"></script>
 
 	<!-- inject:js -->
+  <script src="src/10take.main/home/home.module.js"></script>
+  <script src="src/10take.main/home/home.controller.js"></script>
   <script src="src/10take.main/10take.module.js"></script>
   <!-- endinject -->
 
@@ -17,6 +20,8 @@
 	<title>10take</title>
 </head>
 <body ng-app="10take">
-	
+	<div ui-view="main">
+		
+	</div>
 </body>
 </html>
