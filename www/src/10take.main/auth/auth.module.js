@@ -7,6 +7,7 @@
 	function Config(stateProvider, urlRouterProvider) {
 		stateProvider
 			.state('auth', {
+					'abstract': true,
 					url: '/auth',
 					views: {
 						'main': {
@@ -35,7 +36,7 @@
 			});
 
 		// home page
-		urlRouterProvider.otherwise('auth');
+		urlRouterProvider.otherwise('auth/signIn');
 	}
 		Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
