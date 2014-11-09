@@ -4,14 +4,23 @@
 			<div class="form-group">
 				<div class="input-group">
 					<label class="input-group-addon">@</label>
-					<input type="email" class="form-control" id="uLogin" ng-model='signUp.user.email' placeholder="Login">
+					<input type="email" 
+								 class="form-control" 
+								 ng-model='signUp.user.email' 
+								 placeholder="Login"
+								 ng-required>
 				</div>
 			</div> <!-- /.form-group -->
 
 			<div class="form-group">
 				<div class="input-group">
 					<label class="input-group-addon glyphicon glyphicon-lock"></label>
-					<input type="password" class="form-control" ng-model='signUp.user.password'  placeholder="Password">
+					<input type="password"
+								 class="form-control" 
+								 ng-model='signUp.user.password'  
+								 placeholder="Password"
+								 ng-required="true"
+								 ng-minlength='8'>
 				</div> <!-- /.input-group -->
 			</div> <!-- /.form-group -->
 
