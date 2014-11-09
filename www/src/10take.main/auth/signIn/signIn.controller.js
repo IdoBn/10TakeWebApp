@@ -18,7 +18,7 @@
 
 		SignInCtrl.$inject = ['$scope', '$auth', '$log', '$state'];
 
-	angular.module('10take.auth')
+	angular.module('10take.auth.signIn')
 		.controller('SignInCtrl', SignInCtrl)
 
 }())

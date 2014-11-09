@@ -15,29 +15,10 @@
 							controller: 'AuthCtrl as auth'
 						}
 					}
-				})
-			.state('auth.signIn', {
-				url: '/signIn',
-				views: {
-					'sign': {
-						templateUrl: 'src/10take.main/auth/signIn/signIn.html',
-						controller: 'SignInCtrl as signIn'
-					}
-				}
-			})
-			.state('auth.signUp', {
-				url: '/signUp',
-				views: {
-					'sign': {
-						templateUrl: 'src/10take.main/auth/signUp/signUp.html',
-						controller: 'SignUpCtrl as signUp'
-					}
-				}
-			});
+				});
 
 		// home page
 		urlRouterProvider.otherwise('auth/signIn');
-
 
 		authProvider.configure({
 			apiUrl:  'http://localhost:3000',
@@ -47,7 +28,10 @@
 	}
 		Config.$inject = ['$stateProvider', '$urlRouterProvider', '$authProvider'];
 
-	angular.module('10take.auth', [])
+	angular.module('10take.auth', [
+		'10take.auth.signUp',
+		'10take.auth.signIn'
+		])
 		.run(Run)
 		.config(Config)
 
