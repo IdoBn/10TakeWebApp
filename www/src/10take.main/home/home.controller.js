@@ -1,8 +1,8 @@
 (function() {
 
 	function HomeCtrl(log, stateParams, auth) {
-		log.debug(stateParams);
-		log.debug(auth)
+		// log.debug('state params', stateParams);
+		// log.debug('auth', auth);
 		this.name = stateParams.name;
 	}
 		HomeCtrl.$inject = ['$log', '$stateParams', '$auth'];

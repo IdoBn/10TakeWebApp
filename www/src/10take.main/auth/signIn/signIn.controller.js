@@ -4,14 +4,14 @@
 		scope.auth.signIn = true;
 
 		this.handleSignIn = function(user) {
-			log.debug(user);
+			log.debug('user handle sign in', user);
 			auth.submitLogin(user)
 				.then(function(resp) {
-					log.debug(resp);
+					log.debug('resp handle sign in then', resp);
 					state.go('home');
 				})
 				.catch(function(resp) {
-					log.debug(resp)
+					log.debug('resp handle sign in catch', resp)
 				})
 		};
 	}
