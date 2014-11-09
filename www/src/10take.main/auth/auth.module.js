@@ -4,7 +4,7 @@
 
 	}
 
-	function Config(stateProvider, urlRouterProvider) {
+	function Config(stateProvider, urlRouterProvider, authProvider) {
 		stateProvider
 			.state('auth', {
 					'abstract': true,
@@ -37,8 +37,13 @@
 
 		// home page
 		urlRouterProvider.otherwise('auth/signIn');
+
+
+		authProvider.configure({
+			apiUrl: 'http://localhost:3000'
+		});
 	}
-		Config.$inject = ['$stateProvider', '$urlRouterProvider'];
+		Config.$inject = ['$stateProvider', '$urlRouterProvider', '$authProvider'];
 
 	angular.module('10take.auth', [])
 		.run(Run)

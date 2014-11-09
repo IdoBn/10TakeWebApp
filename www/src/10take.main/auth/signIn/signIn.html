@@ -2,13 +2,13 @@
 	<form novalidate>
 		<h1>sign In</h1>
 		<h4>Email</h4>
-		<input type="email" ng-model="user.email" />
+		<input type="email" ng-model="signIn.user.email" />
 		<h4>Password</h4>
-		<input type="password" class="passInpt" ng-model="user.password">
+		<input type="password" class="passInpt" ng-model="signIn.user.password">
 		<br>
 		<br>
 		<div class="inlineBtns">
-			<button ng-click="signIn(user)" type="button" class="btn btn-success siInbtn">Sign In</button>
+			<button ng-click="signIn.handleSignIn(signIn.user)" type="button" class="btn btn-success siInbtn">Sign In</button>
 			<button type="button" ui-sref="auth.signUp" class="btn btn-primary">Sign Up</button>
 		</div>
 	</form>
