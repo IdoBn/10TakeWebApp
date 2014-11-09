@@ -14,6 +14,7 @@
 
 	angular.module('10take', [
 		'ngAnimate',
+		// 'ngCookies',
 		'ng-token-auth',
 		'ui.router',
 		'10take.home',

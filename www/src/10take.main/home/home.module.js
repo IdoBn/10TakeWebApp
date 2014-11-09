@@ -1,8 +1,12 @@
 (function() {
 
-	function Run() {
-
+	function Run(rootScope, state, log) {
+		rootScope.$on('$stateChangeError', function() {
+			log.debug('route unauthorized');
+			state.go('auth.signIn');
+		});
 	}
+		Run.$inject = ['$rootScope', '$state', '$log'];
 
 	function Config(stateProvider, urlRouterProvider) {
 		stateProvider

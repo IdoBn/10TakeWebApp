@@ -1,15 +1,25 @@
-<div class="signContainer">
-	<form novalidate>
-		<h1>sign In</h1>
-		<h4>Email</h4>
-		<input type="email" ng-model="signIn.user.email" />
-		<h4>Password</h4>
-		<input type="password" class="passInpt" ng-model="signIn.user.password">
-		<br>
-		<br>
-		<div class="inlineBtns">
-			<button ng-click="signIn.handleSignIn(signIn.user)" type="button" class="btn btn-success siInbtn">Sign In</button>
-			<button type="button" ui-sref="auth.signUp" class="btn btn-primary">Sign Up</button>
-		</div>
-	</form>
+<div class='jumbotron'>
+	<div class='container'>
+		<form role="form" novalidate>
+			<div class="form-group">
+				<div class="input-group">
+					<label class="input-group-addon glyphicon">@</label>
+					<input type="email" class="form-control" placeholder="email" ng-model='signIn.user.email'>
+				</div>
+			</div> <!-- /.form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<label class="input-group-addon glyphicon glyphicon-lock"></label>
+					<input type="password" class="form-control" ng-model="signIn.user.password" placeholder="Password">
+				</div> <!-- /.input-group -->
+			</div> <!-- /.form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<input type="submit" ng-click="signIn.handleSignIn(signIn.user)" class='btn btn-primary btn-lg btn-block'>
+				</div>
+			</div>
+		</form>	
+	</div>	
 </div>

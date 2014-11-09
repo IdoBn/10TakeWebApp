@@ -1,15 +1,33 @@
-<div class="signContainer">
-	<form novalidate>
-		<h1>sign Up</h1>
-		<h4>Email</h4>
-		<input type="email" ng-model="user.email" />
-		<h4>Password</h4>
-		<input type="password" class="passInpt" ng-model="user.password">
-		<br>
-		<br>
-		<button ng-click="signUp(user)" type="button" class="btn btn-success siUpbtn">Sign Up</button> 
-		<button type="button" class="btn btn-primary">
-			<span class="glyphicon glyphicon-user"></span> Facebook
-		</button>
-	</form>
+<div class='jumbotron'>
+	<div class='container'>
+		<form role="form">
+			<div class="form-group">
+				<div class="input-group">
+					<label class="input-group-addon">@</label>
+					<input type="email" class="form-control" id="uLogin" ng-model='signUp.user.email' placeholder="Login">
+				</div>
+			</div> <!-- /.form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<label class="input-group-addon glyphicon glyphicon-lock"></label>
+					<input type="password" class="form-control" ng-model='signUp.user.password'  placeholder="Password">
+				</div> <!-- /.input-group -->
+			</div> <!-- /.form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<label class="input-group-addon glyphicon glyphicon-lock"></label>
+					<input type="password" class="form-control" ng-model='signUp.user.password_confirmation' placeholder="Password Confirm">
+				</div> <!-- /.input-group -->
+			</div> <!-- /.form-group -->
+
+			<div class="form-group">
+				<div class="input-group">
+					<input type="submit" ng-click="signUp.handleSignUp(signUp.user)" class='btn btn-primary btn-lg btn-block'>
+				</div>
+			</div>
+		</form>	
+	</div>	
 </div>
+
