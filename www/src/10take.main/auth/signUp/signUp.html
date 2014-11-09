@@ -1,1 +1,15 @@
-<h1>sing up!</h1>
+<div class="signContainer">
+	<form novalidate>
+		<h1>sign Up</h1>
+		<h4>Email</h4>
+		<input type="email" ng-model="user.email" />
+		<h4>Password</h4>
+		<input type="password" class="passInpt" ng-model="user.password">
+		<br>
+		<br>
+		<button ng-click="signUp(user)" type="button" class="btn btn-success siUpbtn">Sign Up</button> 
+		<button type="button" class="btn btn-primary">
+			<span class="glyphicon glyphicon-user"></span> Facebook
+		</button>
+	</form>
+</div>
