@@ -1,8 +1,8 @@
-.ui-view-container {
+.auth {
   position: relative;
 }
 
-[ui-view].ng-enter, [ui-view].ng-leave {
+.auth.ng-enter, .auth.ng-leave {
   position: absolute;
   left: 0;
   right: 0;
@@ -12,28 +12,28 @@
     transition:all .5s ease-in-out;
 }
 
-[ui-view].ng-enter {
+.auth.ng-enter {
   opacity: 0;
   -webkit-transform:scale3d(0.5, 0.5, 0.5);
   -moz-transform:scale3d(0.5, 0.5, 0.5);
   transform:scale3d(0.5, 0.5, 0.5);
 }
 
-[ui-view].ng-enter-active {
+.auth.ng-enter-active {
   opacity: 1;
   -webkit-transform:scale3d(1, 1, 1);
   -moz-transform:scale3d(1, 1, 1);
   transform:scale3d(1, 1, 1);
 }
 
-[ui-view].ng-leave {
+.auth.ng-leave {
   opacity: 1; 
   -webkit-transform:translate3d(0, 0, 0);
   -moz-transform:translate3d(0, 0, 0);
   transform:translate3d(0, 0, 0);
 }
 
-[ui-view].ng-leave-active {
+.auth.ng-leave-active {
   opacity: 0;
   -webkit-transform:translate3d(100px, 0, 0);
   -moz-transform:translate3d(100px, 0, 0);

@@ -8,12 +8,12 @@
 			 auth.submitRegistration(user)
         .then(function(resp) { 
           // handle success response
-          log.debug(resp);
+          log.debug('resp handle sign up', resp);
           state.go('home');	
         })
         .catch(function(resp) { 
           // handle error response
-          log.debug(resp);
+          log.debug('resp handle sign up', resp);
         });
 		}
 	}
