@@ -1,0 +1,52 @@
+<div>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+	    <ul>
+	    	<li class="searchnavForm">
+		    	<form class="navbar-form navbar-left" role="search">
+		    		<a ui-sref="app.home" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></a>
+		      	<div class="input-group" role="group">
+		        	<input type="text" placeholder="Search an item.." class="form-control">
+	        		<div class="input-group-btn" role="group">
+	        			<button type="button" class="btn btn-default">
+		          		<span class="glyphicon glyphicon-search"></span>
+		          	</button>
+		        	</div>
+		      	</div>
+		    	</form>
+		  	</li>
+		  	
+		  	<li class="usernavForm">
+		  		<div class="navbar-right navbar-form">
+		  			<button ng-click="showNotification = ! showNotification" class="btn btn-default">
+		  				<span class="glyphicon glyphicon-fire"></span>
+		  				{{app.user.email}}
+		  			</button>
+		  			<div ng-show="showNotification" class="notificationBoard">
+		  				<div class="arrow">
+		  					<img src="https://dev.vaadin.com/svn/branches/TouchKit2/vaadin-touchkit-agpl/src/main/java/com/vaadin/addon/touchkit/gwt/client/theme/img/navbar-arrow-up.png">
+		  				</div>
+		  				<div class="divo">
+		  					<div class="notfContent">
+			  					<ul class="notfList">
+			  						<li class="notify">
+			  							<img class="userImage notfUserImage" src="http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg">
+			  							<p style="display:inline;">Itai wants to borrow your [Book]</p>
+			  						</li>
+			  						<li class="notify">
+			  							<img class="userImage notfUserImage" src="http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg">
+			  							<p style="display:inline;">Ido  wants to return your [guitar]</p>
+			  						</li>
+			  					</ul>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  	</li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div ui-view='main'></div>
+</div>

@@ -9,7 +9,7 @@
         .then(function(resp) { 
           // handle success response
           log.debug('resp handle sign up', resp);
-          state.go('home');	
+          state.go('app.home');	
         })
         .catch(function(resp) { 
           // handle error response

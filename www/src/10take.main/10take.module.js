@@ -8,7 +8,7 @@
 	function Config(stateProvider, urlRouterProvider) {
 
 		// home page
-		urlRouterProvider.otherwise('auth/signIn');
+		urlRouterProvider.otherwise('/auth/signIn');
 	}
 		Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
@@ -17,6 +17,7 @@
 		'ui.bootstrap',
 		'ng-token-auth',
 		'ui.router',
+		'10take.app',
 		'10take.home',
 		'10take.auth',
 		'10take.user',

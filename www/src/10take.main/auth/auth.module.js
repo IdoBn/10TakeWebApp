@@ -7,18 +7,14 @@
 	function Config(stateProvider, urlRouterProvider, authProvider) {
 		stateProvider
 			.state('auth', {
-					'abstract': true,
-					url: '/auth',
-					views: {
-						'main': {
-							templateUrl: 'src/10take.main/auth/auth.html',
-							controller: 'AuthCtrl as auth'
-						}
-					}
-				});
+				abstract: true,
+				url: '/auth',
+				templateUrl: 'src/10take.main/auth/auth.html',
+				controller: 'AuthCtrl as auth'
+			});
 
 		// home page
-		urlRouterProvider.otherwise('auth/signIn');
+		urlRouterProvider.otherwise('/auth/signIn');
 
 		authProvider.configure({
 			apiUrl:  'http://localhost:3000',

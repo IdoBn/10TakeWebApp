@@ -8,7 +8,7 @@
 			auth.submitLogin(user)
 				.then(function(resp) {
 					log.debug('resp handle sign in then', resp);
-					state.go('home');
+					state.go('app.home');
 				})
 				.catch(function(resp) {
 					log.debug('resp handle sign in catch', resp)
