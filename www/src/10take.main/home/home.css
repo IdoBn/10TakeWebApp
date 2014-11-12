@@ -1,0 +1,83 @@
+ul{
+	list-style-type:none;
+}
+
+a{
+	text-decoration: none;
+}
+
+h3{
+	margin-top:0px;
+}
+
+.searchnavForm{
+	margin-left: 10%;
+}
+
+.usernavForm{
+	margin-right: 10%;
+}
+
+.navbar{
+	background-color: #fff;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.itemDetails{
+	border-bottom: 1px solid;
+}
+
+.userDetails{
+	margin-top: 3%;
+}
+
+.itemImage{
+	width: 188px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.userImage{
+	width: 20px;
+	border-radius: 5px;
+}
+
+.card{
+	background-color:#fff;
+	border-radius: 10px;
+	margin-bottom: 6%; 
+}
+
+body{
+	background: rgba(0, 0, 0, .04);
+}
+
+.cola{
+	margin-left: 10%;
+}
+
+.cardsContainer{
+	margin-top: 7%;
+}
+
+.details{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.cardDescription{
+	font-size: 100%;
+	opacity: .5;
+}
+
+.columns
+{
+	float:left;
+}

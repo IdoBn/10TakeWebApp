@@ -1,2 +1,97 @@
-<h1>welcome home!</h1>
-<h2>{{home.name}}</h2>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <ul>
+    	<li class="searchnavForm">
+	    	<form class="navbar-form navbar-left" role="search">
+	      	<div class="input-group">
+	        	<input type="text" placeholder="Search an item.." class="form-control">
+        		<div class="input-group-btn">
+        			<button type="button" class="btn btn-default">
+	          		<span class="glyphicon glyphicon-search"></span>
+	          	</button>
+	        	</div>
+	      	</div>
+	    	</form>
+	  	</li>
+
+	  	<li class="usernavForm">
+	  		<div class="navbar-right navbar-form">
+	  			<button class="btn btn-default">
+	  				<span class="glyphicon glyphicon-fire"></span>
+	  				{{home.user}}
+	  			</button>
+	  		</div>
+	  	</li>
+    </ul>
+  </div>
+</nav>
+
+<div class="cardsContainer">
+	<ul>
+			<li class="columns cola">
+				<ul class="col1">
+					<li ng-repeat="item in home.items" ng-show="$index % 3 == 0">
+						<div class="card">
+							<div class="image">
+								<img class="itemImage" ng-src="{{item.image}}" src="">
+							</div>
+							<div class="details">
+								<div class="itemDetails">
+									<h3>{{item.name}}</h3>
+									<p class="cardDescription">{{item.description}}</p>
+								</div>	
+								<div class="userDetails">
+									<img class="userImage" ng-src="{{item.user.image}}" src="">
+									<h7>{{item.user.name}}</h7>
+								</div>
+							</div>	
+						</div>	
+					</li>
+				</ul>
+			</li>
+			
+			<li class="columns">
+				<ul class="col2">
+					<li ng-repeat="item in home.items" ng-show="$index % 3 == 1">
+						<div class="card">
+							<div class="image">
+								<img class="itemImage" ng-src="{{item.image}}" src="">
+							</div>
+							<div class="details">
+								<div class="itemDetails">
+									<h3>{{item.name}}</h3>
+									<p class="cardDescription">{{item.description}}</p>
+								</div>	
+								<div class="userDetails">
+									<img class="userImage" ng-src="{{item.user.image}}" src="">
+									<h7>{{item.user.name}}</h7>
+								</div>
+							</div>	
+						</div>	
+					</li>
+				</ul>
+			</li>	
+
+			<li class="columns">
+				<ul class="col3">
+					<li ng-repeat="item in home.items" ng-show="$index % 3 == 2">
+						<div class="card">
+							<div class="image">
+								<img class="itemImage" ng-src="{{item.image}}" src="">
+							</div>
+							<div class="details">
+								<div class="itemDetails">
+									<h3>{{item.name}}</h3>
+									<p class="cardDescription">{{item.description}}</p>
+								</div>	
+								<div class="userDetails">
+									<img class="userImage" ng-src="{{item.user.image}}" src="">
+									<h7>{{item.user.name}}</h7>
+								</div>
+							</div>	
+						</div>	
+					</li>
+				</ul>
+			</li>	
+	</ul>
+</div>
