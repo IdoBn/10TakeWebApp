@@ -19,6 +19,7 @@
 		'ui.router',
 		'10take.home',
 		'10take.auth',
+		'10take.user',
 		'10take.services'
 		])
 		.run(Run)

@@ -1,0 +1,72 @@
+.uImage{
+	width:250px;
+}
+
+.UserProps{
+	display:inline-block;
+	padding:1%;
+	padding-right: 3%;
+	margin-left: 1%;
+	border-right:1px solid;
+	border-color:rgba(0, 0, 0, 0.1);
+}
+
+.Guycontainer{
+	margin-top: 8%;
+	margin-right: 9%;
+	background-color: #fff;
+}
+
+.itemslist{
+	padding-top:1%;
+}
+
+.UItems{
+	display:inline;
+}
+
+.itemsPlace{
+	margin-left: 3%;
+	margin-top: 1%;
+	background-color: #fff;
+	padding-left: 3%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+.propItems{
+	display:inline-block;
+	border-bottom: 1px solid;
+	padding-bottom: 1%;
+	border-color:rgba(0, 0, 0, 0.2);
+}
+
+.userName{
+	margin-top:3%;
+}
+
+.userInnerProps{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.userEmail{
+	margin-bottom: 5%;
+}
+
+.DownProps{
+	border-top:1px solid;
+	border-color:rgba(0, 0, 0, 0.4);
+	margin-top: 3%;
+	padding-top: 3%;
+}
+
+.columns
+{
+	float:left;
+}
+
+h5{
+	font-size: 100%;
+	opacity: .5;
+}

@@ -3,6 +3,7 @@
     <ul>
     	<li class="searchnavForm">
 	    	<form class="navbar-form navbar-left" role="search">
+	    		<a ui-sref="home" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></a>
 	      	<div class="input-group">
 	        	<input type="text" placeholder="Search an item.." class="form-control">
         		<div class="input-group-btn">
@@ -13,7 +14,7 @@
 	      	</div>
 	    	</form>
 	  	</li>
-
+	  	
 	  	<li class="usernavForm">
 	  		<div class="navbar-right navbar-form">
 	  			<button ng-click="showNotification = ! showNotification" class="btn btn-default">
@@ -26,7 +27,6 @@
 	  				</div>
 	  				<div class="divo">
 	  					<div class="notfContent">
-		  					<h5>Notifications!</h5>
 		  					<ul class="notfList">
 		  						<li class="notify">
 		  							<img class="userImage notfUserImage" src="http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg">
@@ -60,7 +60,7 @@
 									<h3>{{item.name}}</h3>
 									<p class="cardDescription">{{item.description}}</p>
 								</div>	
-								<a>
+								<a ui-sref="user({userId: item.user.id})">
 									<div class="userDetails">
 										<img class="userImage" ng-src="{{item.user.image}}" src="">
 										<h7>{{item.user.name}}</h7>
