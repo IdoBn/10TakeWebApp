@@ -108,6 +108,30 @@
 					name: "Guy Moses",
 					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
 				}
+			},
+			{
+				id: 10,
+				name: "item j",
+				description: "meine kleine description",
+				image: "http://cdn.shopify.com/s/files/1/0152/7913/products/Towel_6.jpg?v=1368032581",
+				user:
+				{
+					id: 125,
+					name: "Guy Moses",
+					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
+				}
+			},
+			{
+				id: 11,
+				name: "item k",
+				description: "meine kleine description",
+				image: "http://cnet2.cbsistatic.com/hub/i/r/2014/07/18/9a7a90dd-15c2-40d6-bd44-76ceab798801/resize/770x578/bcd13043b445b6155443b4cef64bc38c/large-hero-iphone-6-04-cd.jpg",
+				user:
+				{
+					id: 125,
+					name: "Guy Moses",
+					image: "http://upload.wikimedia.org/wikipedia/commons/3/31/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg"
+				}
 			}
 		];
 	}

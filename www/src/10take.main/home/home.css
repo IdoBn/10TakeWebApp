@@ -15,6 +15,22 @@ h5{
 	margin: 0px;
 }
 
+.hightlightc{
+	opacity: 0.7;
+}
+
+.notify{
+	padding-bottom: 3%;
+}
+
+.notfUserImage{
+	display: inline-block;
+}
+
+.notfUserDesc{
+	display: inline;
+}
+
 .searchnavForm{
 	margin-left: 10%;
 }
@@ -24,12 +40,11 @@ h5{
 }
 
 .navbar{
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.89);
 }
 
 a:hover 
-{
-     color:#00A0C6; 
+{ 
      text-decoration:none; 
      cursor:pointer;  
 }
@@ -56,6 +71,7 @@ a:hover
 	background-color:#fff;
 	border-radius: 10px;
 	margin-bottom: 6%; 
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 body{
@@ -63,7 +79,8 @@ body{
 }
 
 .cola{
-	margin-left: 20%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .notificationBoard{
@@ -82,6 +99,8 @@ body{
 	padding-right: 10px;
 	padding-bottom: 10px;
 	margin-right: 10px;
+	border: 1px solid rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 .notfContent{
@@ -94,6 +113,8 @@ body{
 
 .cardsContainer{
 	margin-top: 7%;
+	margin-left: 8%;
+	margin-right: auto;
 }
 
 .details{
