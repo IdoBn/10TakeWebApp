@@ -1,5 +1,6 @@
 ul{
 	list-style-type:none;
+	padding-left: 10px;
 }
 
 a{
@@ -8,6 +9,10 @@ a{
 
 h3{
 	margin-top:0px;
+}
+
+h5{
+	margin: 0px;
 }
 
 .searchnavForm{
@@ -58,7 +63,33 @@ body{
 }
 
 .cola{
-	margin-left: 10%;
+	margin-left: 20%;
+}
+
+.notificationBoard{
+	position: fixed;
+}
+
+.arrow{
+	padding-top: 3%;
+	padding-left: 30%;
+}
+
+.divo{
+	background-color: #fff;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+}
+
+.notfContent{
+	padding-top: 4%;
+}
+
+.notfList{
+	padding-top: 4%;
 }
 
 .cardsContainer{

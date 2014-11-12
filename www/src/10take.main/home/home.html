@@ -16,10 +16,26 @@
 
 	  	<li class="usernavForm">
 	  		<div class="navbar-right navbar-form">
-	  			<button class="btn btn-default">
+	  			<button ng-click="showNotification = ! showNotification" class="btn btn-default">
 	  				<span class="glyphicon glyphicon-fire"></span>
 	  				{{home.user}}
 	  			</button>
+	  			<div ng-show="showNotification" class="notificationBoard">
+	  				<div class="arrow">
+	  					<img src="https://dev.vaadin.com/svn/branches/TouchKit2/vaadin-touchkit-agpl/src/main/java/com/vaadin/addon/touchkit/gwt/client/theme/img/navbar-arrow-up.png">
+	  				</div>
+	  				<div class="divo">
+	  					<div class="notfContent">
+		  					<h5>Notifications!</h5>
+		  					<ul class="notfList">
+		  						<li>
+		  							<p>Itai wants to borrow your [Book]</p>
+		  							<p>Ido  wants to return your [guitar]</p>
+		  						</li>
+		  					</ul>
+	  					</div>
+	  				</div>
+	  			</div>
 	  		</div>
 	  	</li>
     </ul>
